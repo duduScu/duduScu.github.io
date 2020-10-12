@@ -155,6 +155,101 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-rumor-detection-introduction" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/07/rumor-detection-introduction/">Rumor Detection</a>
+    </h1>
+  
+
+        
+        <a href="/2020/10/07/rumor-detection-introduction/" class="archive-article-date">
+  	<time datetime="2020-10-07T15:56:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Rumor-Detection"><a href="#Rumor-Detection" class="headerlink" title="Rumor Detection"></a>Rumor Detection</h1><h2 id="BACKGROUND"><a href="#BACKGROUND" class="headerlink" title="BACKGROUND"></a>BACKGROUND</h2><p>Nowadays, Twitter has become a necessary information exchange platform and public opinion field. However, the convenience and openness of tweets have also fostered various rumors. Rumors on twitter have become a serious concern recently, which may cause damages to politics, economy, and social stability. Meanwhile, detecting rumors from massive information in social media is becoming an arduous challenge, which also my team intends to address.  </p>
+<p>Utilizing manual detection methods, the identification results come at the price of much manpower and many financial resources. Furthermore, the quality of rumor detection might be inhibited by the respective experience and professional knowledge of experts.</p>
+<p>Thus, the key to puzzling out the rumor detection problem on social media is to formulate an effective automatic rumor detection system.</p>
+<h2 id="RELATED-WORK"><a href="#RELATED-WORK" class="headerlink" title="RELATED WORK"></a>RELATED WORK</h2><p>Most researchers in the field of rumor detection have had difficulty to mining data effectively from complex social networks, the data collected by those researchers usually contained duplicate data and noisy data, which caused the detection models with significant detection delay.</p>
+<p>Some existing studies utilize feature-based approaches to detect rumors. They extract a wide range of features from posts, such as text features, social context features, propagation structure features, and image features, to construct the representation, and train shallow classifiers to distinguish between rumor and non-rumor. However, the effect of feature-based algorithms relies on the quality of manual feature engineering. The critical process of feature identification is driven by data rather than theoretical grounds, which causes poor generalization ability to models so that findings do not apply for different datasets. </p>
+<p>Recently, deep learning has reached a remarkable effect in the field of Natural Language Processing. Thus, more attention has focused on deep learning-based approaches in rumor detection. Neural networks can learn the latent textual and semantic representation. In general, deep learning can extract more complex, more abstract, and more prominent feature representation especially from time-series data than shallow learning, thereby improving the accuracy of classification. Consequently, in this project, we implement an automatic rumor detection technique based on deep learning for the twitter platform.</p>
+<hr>
+<h2 id="DATASET"><a href="#DATASET" class="headerlink" title="DATASET"></a>DATASET</h2><p>which is extracted from Twitter API.</p>
+<h3 id="OUR-PLAN"><a href="#OUR-PLAN" class="headerlink" title="OUR PLAN"></a>OUR PLAN</h3><p>Our task aims to improve accuracy and reduce delay for rumor detection on twitter.</p>
+<p>We are going to establish a rumor detection model based on a deep bidirectional GRU neural network for discovering rumors at the early stage of propagation.</p>
+<ul>
+<li>Firstly, we will model tweet posts diffusion with propagation trees, which show how an original message is transmitted and developed over time. </li>
+</ul>
+<ul>
+<li>Then, we will process the tweets content to extract the text representation of each propagation tree through the bidirectional encoder representations from transformers. Meanwhile, features like the total count of retweets are important components of social context features in the field of rumor detection. </li>
+</ul>
+<ul>
+<li>Finally, we plan to use a deep bidirectional GRU neural network to learn the latent textual and semantic representation from the social context features and the text representation to further classify the tweets into rumor and non-rumor. <img src="/.io//10/07/rumor-detection-introduction/acc_image.png" class title="The experiment effect will be displayed in the way the following figure is shown">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/10/07/rumor-detection-introduction/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
